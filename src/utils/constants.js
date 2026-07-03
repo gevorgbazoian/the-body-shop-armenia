@@ -10,7 +10,7 @@ export const INGREDIENTS = [
     benefits: "Intensely calms, hydrates, and cools sensitive skin.",
     origin: "Campeche, Mexico",
     community: "Sourced through Community Fair Trade from organic farmers who hand-harvest mature leaves within hours to lock in pure gel.",
-    image: "https://images.unsplash.com/photo-1567306301408-9b74779a11af?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: "avocado",
@@ -88,7 +88,7 @@ export const PRODUCTS = [
     priceVal: 8900,
     rating: 4.8,
     reviews: 142,
-    image: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&q=80&w=800",
     benefits: "Provides 96hr intense moisture. Made with 95% ingredients of natural origin, including handcrafted community fair trade shea butter.",
     usage: "Massage a dollop into dry skin after bathing. Pay extra attention to dry elbows and knees.",
     ingredients: "Aqua, Butyrospermum Parkii Butter, Cetearyl Alcohol, Glycerin, Glyceryl Stearate, PEG-100 Stearate, C12-15 Alkyl Benzoate, Ethylhexyl Palmitate.",
@@ -103,7 +103,7 @@ export const PRODUCTS = [
     priceVal: 6500,
     rating: 4.9,
     reviews: 298,
-    image: "https://images.unsplash.com/photo-1608248597481-496100c80836?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&q=80&w=800",
     benefits: "A purifying concentrate that targets blemishes. Perfect for oily, blemished skin. Clinically proven to reduce impurities.",
     usage: "Apply 1-2 drops directly onto blemishes using clean fingers or a cotton bud. Use day and night.",
     ingredients: "Melaleuca Alternifolia Leaf Oil, Limonene, Calophyllum Inophyllum Seed Oil, Tocopherol, Leptospermum Petersonii Oil.",
@@ -136,7 +136,7 @@ export const PRODUCTS = [
     image: "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&q=80&w=800",
     benefits: "Clears flakes and soothes dry, itchy scalps. Made with ginger essential oil, birch bark, and white willow extracts.",
     usage: "Lather into wet hair, massage scalp gently, and rinse thoroughly. Follow with Ginger Conditioner.",
-    ingredients: "Aqua, Sodium Loreth Sulfate, Cocamidopropyl Betaine, Salicylic Acid, Zingiber Officinale Root Oil.",
+    ingredients: "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Salicylic Acid, Zingiber Officinale Root Oil.",
     featured: true,
     collection: "Ginger"
   },
@@ -148,7 +148,7 @@ export const PRODUCTS = [
     priceVal: 5200,
     rating: 4.7,
     reviews: 121,
-    image: "https://images.unsplash.com/photo-1556228578-0f85f1a2d59d?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=800",
     benefits: "Daily gel cleanser that removes impurities and excess oil without over-drying the skin.",
     usage: "Lather into wet skin using warm water. Massage in circles, rinse, and pat dry.",
     ingredients: "Aqua, Glycerin, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG-120 Methyl Glucose Dioleate, Tea Tree Leaf Oil.",
@@ -163,7 +163,7 @@ export const PRODUCTS = [
     priceVal: 7900,
     rating: 4.8,
     reviews: 95,
-    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=800",
     benefits: "Absorbs instantly on damp skin for 48hr hydration. Smells like a fresh English rose garden in bloom.",
     usage: "Smooth onto damp or dry skin immediately after showering for instant hydration.",
     ingredients: "Aqua, Glycerin, Alcohol Denat., Dimethicone, Butylene Glycol, Parfum, Rose Extract, Sodium Hyaluronate.",
