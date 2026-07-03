@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { ShoppingBag, Menu, X, Globe, Heart } from "lucide-react";
 
-export default function Navbar({ cartCount = 0 }) {
+export default function Navbar({ cartCount = 0, onCartClick }) {
   const [isOpen, setIsOpen] = useState(false);
   const [visible, setVisible] = useState(true);
   const [scrolled, setScrolled] = useState(false);
@@ -115,11 +115,11 @@ export default function Navbar({ cartCount = 0 }) {
           </button>
 
           {/* Cart Icon */}
-          <Link
-            to="/products"
-            className="focus:outline-none hover:text-forest transition-colors relative flex items-center"
+          <button
+            onClick={onCartClick}
+            className="focus:outline-none hover:text-forest transition-colors relative flex items-center cursor-pointer"
             data-cursor="explore"
-            data-cursor-text="Shop"
+            data-cursor-text="Basket"
           >
             <ShoppingBag size={18} />
             {cartCount > 0 && (
@@ -127,19 +127,22 @@ export default function Navbar({ cartCount = 0 }) {
                 {cartCount}
               </span>
             )}
-          </Link>
+          </button>
         </div>
 
         {/* Mobile menu toggle & Cart */}
         <div className="flex items-center space-x-4 lg:hidden">
-          <Link to="/products" className="relative text-[#0B260E]">
+          <button
+            onClick={onCartClick}
+            className="relative text-[#0B260E] cursor-pointer"
+          >
             <ShoppingBag size={18} />
             {cartCount > 0 && (
               <span className="absolute -top-2 -right-2 bg-forest text-white text-[8px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
                 {cartCount}
               </span>
             )}
-          </Link>
+          </button>
 
           <button
             onClick={() => setIsOpen(!isOpen)}

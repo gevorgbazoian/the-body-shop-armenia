@@ -10,7 +10,7 @@ export const INGREDIENTS = [
     benefits: "Intensely calms, hydrates, and cools sensitive skin.",
     origin: "Campeche, Mexico",
     community: "Sourced through Community Fair Trade from organic farmers who hand-harvest mature leaves within hours to lock in pure gel.",
-    image: "https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1567306301408-9b74779a11af?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: "avocado",
@@ -36,7 +36,7 @@ export const INGREDIENTS = [
     benefits: "Locks in intense moisture, softens skin, and repairs dry barriers.",
     origin: "Tungteiya, Ghana",
     community: "Handcrafted by over 600 women of the Tungteiya Shea Butter Association, providing fair wages and funding local healthcare and water projects.",
-    image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1590156221120-75d774f9b7c2?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: "tea-tree",
@@ -49,7 +49,7 @@ export const INGREDIENTS = [
     benefits: "Naturally antibacterial, targets blemishes and controls excess oil.",
     origin: "Mount Kenya, Kenya",
     community: "Grown by organic smallholders who steam-distill the leaves within 12 hours of harvest to preserve purifying qualities.",
-    image: "https://images.unsplash.com/photo-1598901847919-b95dd0fabbb6?auto=format&fit=crop&q=80&w=800"
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: "british-rose",
@@ -88,7 +88,7 @@ export const PRODUCTS = [
     priceVal: 8900,
     rating: 4.8,
     reviews: 142,
-    image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&q=80&w=800",
     benefits: "Provides 96hr intense moisture. Made with 95% ingredients of natural origin, including handcrafted community fair trade shea butter.",
     usage: "Massage a dollop into dry skin after bathing. Pay extra attention to dry elbows and knees.",
     ingredients: "Aqua, Butyrospermum Parkii Butter, Cetearyl Alcohol, Glycerin, Glyceryl Stearate, PEG-100 Stearate, C12-15 Alkyl Benzoate, Ethylhexyl Palmitate.",
@@ -103,7 +103,7 @@ export const PRODUCTS = [
     priceVal: 6500,
     rating: 4.9,
     reviews: 298,
-    image: "https://images.unsplash.com/photo-1598901847919-b95dd0fabbb6?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1608248597481-496100c80836?auto=format&fit=crop&q=80&w=800",
     benefits: "A purifying concentrate that targets blemishes. Perfect for oily, blemished skin. Clinically proven to reduce impurities.",
     usage: "Apply 1-2 drops directly onto blemishes using clean fingers or a cotton bud. Use day and night.",
     ingredients: "Melaleuca Alternifolia Leaf Oil, Limonene, Calophyllum Inophyllum Seed Oil, Tocopherol, Leptospermum Petersonii Oil.",
@@ -136,7 +136,7 @@ export const PRODUCTS = [
     image: "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&q=80&w=800",
     benefits: "Clears flakes and soothes dry, itchy scalps. Made with ginger essential oil, birch bark, and white willow extracts.",
     usage: "Lather into wet hair, massage scalp gently, and rinse thoroughly. Follow with Ginger Conditioner.",
-    ingredients: "Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Salicylic Acid, Zingiber Officinale Root Oil.",
+    ingredients: "Aqua, Sodium Loreth Sulfate, Cocamidopropyl Betaine, Salicylic Acid, Zingiber Officinale Root Oil.",
     featured: true,
     collection: "Ginger"
   },
@@ -148,7 +148,7 @@ export const PRODUCTS = [
     priceVal: 5200,
     rating: 4.7,
     reviews: 121,
-    image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1556228578-0f85f1a2d59d?auto=format&fit=crop&q=80&w=800",
     benefits: "Daily gel cleanser that removes impurities and excess oil without over-drying the skin.",
     usage: "Lather into wet skin using warm water. Massage in circles, rinse, and pat dry.",
     ingredients: "Aqua, Glycerin, Sodium Laureth Sulfate, Cocamidopropyl Betaine, PEG-120 Methyl Glucose Dioleate, Tea Tree Leaf Oil.",
@@ -163,7 +163,7 @@ export const PRODUCTS = [
     priceVal: 7900,
     rating: 4.8,
     reviews: 95,
-    image: "https://images.unsplash.com/photo-1490237152597-89aa85517bec?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800",
     benefits: "Absorbs instantly on damp skin for 48hr hydration. Smells like a fresh English rose garden in bloom.",
     usage: "Smooth onto damp or dry skin immediately after showering for instant hydration.",
     ingredients: "Aqua, Glycerin, Alcohol Denat., Dimethicone, Butylene Glycol, Parfum, Rose Extract, Sodium Hyaluronate.",
@@ -173,11 +173,11 @@ export const PRODUCTS = [
 ];
 
 export const COLLECTIONS = [
-  { id: "tea-tree", name: "Tea Tree", desc: "Purifying skin clearers", image: "https://images.unsplash.com/photo-1598901847919-b95dd0fabbb6?auto=format&fit=crop&q=80&w=800" },
-  { id: "vitamin-c", name: "Vitamin C", desc: "Glow & radiance boosters", image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800" },
+  { id: "tea-tree", name: "Tea Tree", desc: "Purifying skin clearers", image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=800" },
+  { id: "vitamin-c", name: "Vitamin C", desc: "Glow & radiance boosters", image: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&q=80&w=800" },
   { id: "british-rose", name: "British Rose", desc: "Dewy floral hydration", image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=800" },
   { id: "shea", name: "Shea Butter", desc: "Ultra-rich barrier repair", image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&q=80&w=800" },
-  { id: "moringa", name: "Moringa", desc: "Brightening floral body care", image: "https://images.unsplash.com/photo-1508747705-3de207a84a6f?auto=format&fit=crop&q=80&w=800" },
+  { id: "moringa", name: "Moringa", desc: "Brightening floral body care", image: "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&q=80&w=800" },
   { id: "olive", name: "Olive", desc: "Soothing Mediterranean hydration", image: "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&q=80&w=800" }
 ];
 
@@ -208,7 +208,7 @@ export const GIFT_SETS = [
     name: "Luxury Shea Nourishing Gift Set",
     theme: "Self-Care",
     price: "16,500 ֏",
-    image: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&q=80&w=800",
     contents: ["Shea Body Butter 200ml", "Shea Hand Cream 30ml", "Shea Shower Cream 250ml", "Shea Body Scrub 50ml"]
   },
   {
@@ -216,7 +216,7 @@ export const GIFT_SETS = [
     name: "British Rose Glow & Hydrate Set",
     theme: "Birthday",
     price: "12,900 ֏",
-    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&q=80&w=800",
     contents: ["Rose Shower Gel 250ml", "Rose Body Yogurt 200ml", "Rose Hand Cream 30ml", "Rose Soap 100g"]
   },
   {
@@ -224,7 +224,7 @@ export const GIFT_SETS = [
     name: "Tea Tree Clear Skin Rescue Kit",
     theme: "Skincare System",
     price: "14,500 ֏",
-    image: "https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800",
     contents: ["Tea Tree Face Wash 250ml", "Tea Tree Toner 250ml", "Tea Tree Oil 10ml", "Clay Face Mask 50ml"]
   }
 ];

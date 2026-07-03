@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 import CustomCursor from "./components/CustomCursor";
+import CartDrawer from "./components/CartDrawer";
 
 // Page Views
 import Home from "./pages/Home";
@@ -20,6 +21,7 @@ import Contact from "./pages/Contact";
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [cartItems, setCartItems] = useState([]);
+  const [cartOpen, setCartOpen] = useState(false);
 
   // 1. Initialize Lenis Smooth Scroll
   useEffect(() => {
@@ -58,6 +60,24 @@ export default function App() {
 
   const handleAddToCart = (product) => {
     setCartItems((prev) => [...prev, product]);
+    // Automatically open cart when item is added for nice visual confirmation
+    setCartOpen(true);
+  };
+
+  const handleRemoveOne = (product) => {
+    setCartItems((prev) => {
+      const idx = prev.findIndex((x) => x.id === product.id);
+      if (idx > -1) {
+        const next = [...prev];
+        next.splice(idx, 1);
+        return next;
+      }
+      return prev;
+    });
+  };
+
+  const handleRemoveAll = (product) => {
+    setCartItems((prev) => prev.filter((x) => x.id !== product.id));
   };
 
   const handlePreloaderComplete = () => {
@@ -75,7 +95,17 @@ export default function App() {
         <div className="flex flex-col min-h-screen text-brandDark">
           
           {/* Header/Navbar */}
-          <Navbar cartCount={cartItems.length} />
+          <Navbar cartCount={cartItems.length} onCartClick={() => setCartOpen(true)} />
+
+          {/* Cart Slider Drawer */}
+          <CartDrawer
+            isOpen={cartOpen}
+            onClose={() => setCartOpen(false)}
+            cartItems={cartItems}
+            onAddOne={handleAddToCart}
+            onRemoveOne={handleRemoveOne}
+            onRemoveAll={handleRemoveAll}
+          />
 
           {/* Main Routing Container */}
           <main className="flex-grow">
