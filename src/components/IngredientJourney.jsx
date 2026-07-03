@@ -32,7 +32,7 @@ export default function IngredientJourney() {
       desc: "Handcrafted by the Tungteiya Shea Butter Association. The local women collect, wash, and sun-dry the fallen nuts, earning fair wages that fund schools, clean water, and healthcare.",
       stat: "600+ Women",
       statDesc: "Gaining independence",
-      image: "https://images.unsplash.com/photo-1590005354167-6da97870c913?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&q=80&w=1200",
       icon: <HeartHandshake size={16} />,
       ref: stage2Ref,
     },
@@ -43,7 +43,7 @@ export default function IngredientJourney() {
       desc: "The Shea nuts are crushed, roasted, and kneaded meticulously by hand to extract the raw, organic butter. A heritage craft passed down across generations.",
       stat: "100% Raw",
       statDesc: "Handmade extraction",
-      image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.unsplash.com/photo-1608797178974-15b35a61d121?auto=format&fit=crop&q=80&w=1200",
       icon: <Award size={16} />,
       ref: stage3Ref,
     },
@@ -185,6 +185,9 @@ export default function IngredientJourney() {
                     src={step.image}
                     alt={step.title}
                     className="w-full h-full object-cover brightness-[0.85]"
+                    onError={(e) => {
+                      e.target.src = "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=800";
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brandDark/60 via-transparent to-transparent" />
                   
