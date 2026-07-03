@@ -71,19 +71,43 @@ export default function Product({ onAddToCart }) {
                 src={product.image}
                 alt={product.name}
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.target.src = "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800";
+                }}
               />
             </div>
             
             {/* Small decorative thumbnail strip simulating gallery */}
             <div className="grid grid-cols-3 gap-4">
               <div className="h-24 rounded-2xl overflow-hidden border border-forest/20 cursor-pointer">
-                <img src={product.image} className="w-full h-full object-cover" alt="Angle 1" />
+                <img
+                  src={product.image}
+                  className="w-full h-full object-cover"
+                  alt="Angle 1"
+                  onError={(e) => {
+                    e.target.src = "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800";
+                  }}
+                />
               </div>
               <div className="h-24 rounded-2xl overflow-hidden border border-transparent hover:border-forest/20 opacity-70 hover:opacity-100 transition-all cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover" alt="Angle 2" />
+                <img
+                  src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&q=80&w=800"
+                  className="w-full h-full object-cover"
+                  alt="Angle 2"
+                  onError={(e) => {
+                    e.target.src = "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800";
+                  }}
+                />
               </div>
               <div className="h-24 rounded-2xl overflow-hidden border border-transparent hover:border-forest/20 opacity-70 hover:opacity-100 transition-all cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover" alt="Angle 3" />
+                <img
+                  src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&q=80&w=800"
+                  className="w-full h-full object-cover"
+                  alt="Angle 3"
+                  onError={(e) => {
+                    e.target.src = "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800";
+                  }}
+                />
               </div>
             </div>
           </div>
@@ -258,7 +282,14 @@ export default function Product({ onAddToCart }) {
                 data-cursor-text="View"
               >
                 <div className="h-56 rounded-2xl overflow-hidden bg-[#FAF9F6] mb-4">
-                  <img src={p.image} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt={p.name} />
+                  <img
+                    src={p.image}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    alt={p.name}
+                    onError={(e) => {
+                      e.target.src = "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800";
+                    }}
+                  />
                 </div>
                 <h3 className="text-base font-cormorant font-bold text-brandDark group-hover:text-forest transition-colors line-clamp-1">
                   {p.name}

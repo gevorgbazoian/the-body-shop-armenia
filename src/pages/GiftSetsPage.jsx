@@ -51,6 +51,9 @@ export default function GiftSetsPage({ onAddToCart }) {
                   src={gift.image}
                   alt={gift.name}
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  onError={(e) => {
+                    e.target.src = "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&q=80&w=800";
+                  }}
                 />
                 <div className="absolute top-4 left-4">
                   <span className="bg-earth text-white text-[8px] font-inter font-bold tracking-widest px-3 py-1 rounded-full uppercase flex items-center space-x-1">
